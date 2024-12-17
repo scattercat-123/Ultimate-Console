@@ -1,0 +1,127 @@
+body {
+  background: black;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 26px;
+  font-smooth: auto;
+  font-weight: bold;
+  line-height: 1.5;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Black background for visibility */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+div {
+  font-size: 150px;
+}
+div:hover:before, div:hover:after {
+  position: absolute;
+  content: "Ultimate Game";
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding-bottom: 50vh;
+}
+div:hover:before {
+  top: 49.5%;
+  left: 49.5%;
+  color: rgba(233, 30, 99, 0.8);
+  animation: distort1 300ms linear infinite;
+}
+div:hover:after {
+  top: 50.5%;
+  left: 50.5%;
+  color: rgba(3, 169, 244, 0.8);
+  animation: distort2 300ms linear infinite;
+}
+@keyframes distort1 {
+  0% {
+    top: 49.5%;
+    left: 49.5%;
+  }
+  12.5% {
+    top: 49.5%;
+    left: 50%;
+  }
+  25% {
+    top: 49.5%;
+    left: 50.5%;
+  }
+  37.5% {
+    top: 50%;
+    left: 50.5%;
+  }
+  50% {
+    top: 50.5%;
+    left: 50.5%;
+  }
+  62.5% {
+    top: 50.5%;
+    left: 50%;
+  }
+  75% {
+    top: 50.5%;
+    left: 49.5%;
+  }
+  87.5% {
+    top: 50%;
+    left: 49.5%;
+  }
+  100% {
+    top: 49.5%;
+    left: 49.5%;
+  }
+}
+@keyframes distort2 {
+  0% {
+    top: 50.5%;
+    left: 50.5%;
+  }
+  12.5% {
+    top: 50%;
+    left: 50.5%;
+  }
+  25% {
+    top: 49.5%;
+    left: 50.5%;
+  }
+  37.5% {
+    top: 49.5%;
+    left: 50%;
+  }
+  50% {
+    top: 49.5%;
+    left: 49.5%;
+  }
+  62.5% {
+    top: 50%;
+    left: 49.5%;
+  }
+  75% {
+    top: 50.5%;
+    left: 49.5%;
+  }
+  87.5% {
+    top: 50.5%;
+    left: 50%;
+  }
+  100% {
+    top: 50.5%;
+    left: 50.5%;
+  }
+}
